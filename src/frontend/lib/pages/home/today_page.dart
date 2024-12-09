@@ -25,7 +25,7 @@ class _TodayPageState extends State<TodayPage> {
   final ApiService apiService = ApiService();
   @override
   void initState() {
-    // TODO: implement initState
+    // TODO: TASK 3: implement initState
     super.initState();
     final timeProvider = Provider.of<TimeProvider>(context, listen: false);
     Timer.periodic(const Duration(seconds: 1), (timer) {
@@ -36,7 +36,7 @@ class _TodayPageState extends State<TodayPage> {
 
   Future<void> fetchCalendar() async {
     final response = await ApiService().getTodayCalendar();
-    if (response != null) {
+    if (response != null) {   // TODO TASK 3: The operand can't be null, so the condition is always true
       setState(() {
         meeting = response;
       });

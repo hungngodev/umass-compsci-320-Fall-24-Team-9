@@ -154,7 +154,7 @@ class _LoginPageState extends State<LoginPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
                                 Text("Don't have an account?"),
-                                Text(
+                                Text(   // TODO TASK 1: add link to sign up view
                                   "Sign up",
                                   style: TextStyle(
                                       fontWeight: FontWeight.w600,

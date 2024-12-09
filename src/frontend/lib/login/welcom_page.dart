@@ -28,7 +28,7 @@ class _WelcomePageState extends State<WelcomePage> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // TODO TASK 2: Change colors to theme colors for consistency
     return Scaffold(
       body: currentView == 'onboarding'
           ? OnboardingPagePresenter(
@@ -42,7 +42,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
                 OnboardingPageModel(
                   title: 'Connect with your friends.',
-                  description: 'Connect with your friends anytime anywhere.',
+                  description: 'Connect with your friends, anytime, anywhere.',
                   imageUrl:
                       'https://i.ibb.co/LvmZypG/storefront-illustration-2.png',
                   bgColor: const Color(0xff1eb090),
@@ -100,7 +100,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   )),
             ],
           ),
-          FadeInUp(
+          FadeInUp( // TODO TASK 4: change image to logo
               duration: const Duration(milliseconds: 1400),
               child: Container(
                 height: MediaQuery.of(context).size.height / 3,
@@ -172,7 +172,7 @@ class _WelcomePageState extends State<WelcomePage> {
   }
 
   // Login view
-  Widget _buildLoginView() {
+  Widget _buildLoginView() {    // TODO TASK 1: switch to sign up view
     return BlocProvider(
       create: (context) => LoginBloc(
         authenticationBloc: BlocProvider.of<AuthenticationBloc>(context),
@@ -189,7 +189,7 @@ class _WelcomePageState extends State<WelcomePage> {
   }
 
   // Signup view
-  Widget _buildSignupView() {
+  Widget _buildSignupView() {   // TODO TASK 1: switch to log in view
     return SignUpPage(onBack: () {
       setState(() {
         currentView = "welcome"; // Go back to welcome view

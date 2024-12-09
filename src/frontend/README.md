@@ -74,9 +74,10 @@ Follow these steps to set up and run the application locally:
 2. Type and enter this to run apiEventData:
    ```bash
    python3 apiEventData.py
+
    ```
-3. Then go to link indcated in terminal:
-4. Same goes for apiHotelsData.
+3. Then go to link indicated in terminal:
+4. Same goes for apiHotelsData and apiRESTData.
 
 ---
 
@@ -84,7 +85,7 @@ Follow these steps to set up and run the application locally:
 
 - **Frontend**: Flutter
 - **Backend**: Django
-- **API Integration**: OpenAI API
+- **API Integration**: OpenAI API, SerpApi, Yelp Fusion API
 
 ---
 
